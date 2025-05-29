@@ -1,6 +1,7 @@
 import 'package:alubank/components/box_card.dart';
 import 'package:alubank/components/content_division.dart';
 import 'package:alubank/components/header.dart';
+import 'package:alubank/components/recente_activity.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -12,9 +13,7 @@ class Home extends StatelessWidget {
       body: Column(
         children: [
           Header(),
-          BoxCard(
-            boxContent: ContentDivision(),
-          ),
+         RecenteActivity()
         ],
       ),
     );
