@@ -9,7 +9,7 @@ class RecenteActivity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
       padding: const EdgeInsets.all(16),
       child: BoxCard(
         boxContent: _RecenteActivityContent(),
@@ -67,7 +67,7 @@ class _RecenteActivityContent extends StatelessWidget {
             ),
           ],
         ),
-        Padding(
+        const Padding(
           padding: const EdgeInsets.only(
             top: 16,
             bottom: 8,
@@ -79,21 +79,21 @@ class _RecenteActivityContent extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
           ),
           clipBehavior: Clip.hardEdge,
-          child: LinearProgressIndicator(
+          child: const LinearProgressIndicator(
             value: .3,
             minHeight: 8,
           ),
         ),
-        Padding(
+        const Padding(
           padding: const EdgeInsets.only(top: 8, bottom: 8),
           child: ContentDivision(),
         ),
-        Text(
+        const Text(
           "Esse mês você gastou \$1500.00 com jogos. Tente abaixar esse custo!",
         ),
         TextButton(
           onPressed: () {},
-          child: Text(
+          child: const Text(
             "Diga-me como!",
             style: TextStyle(
               fontSize: 16,
